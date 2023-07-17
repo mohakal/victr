@@ -3,7 +3,7 @@ require("database.php");
 $response = [];
 $git_data = [];
 $response_status = 200;
-$access_token = "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";
+$access_token = "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";
 try {
 // API endpoint to get the most-starred PHP projects
     $url = 'https://api.github.com/search/repositories?q=language:php&sort=stars&order=desc';
