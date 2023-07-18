@@ -22,7 +22,6 @@ try {
     $response = curl_exec($ch);
 // Check if the request was successful (status code 200)
     $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    //dump($response);
     if ($status_code == 200) {
         $data = json_decode($response, true);
         // Iterate over the items to retrieve repository information
